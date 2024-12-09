@@ -1,4 +1,4 @@
-# ROS2 RAG Project
+# RAG Final Project
 
 ### Environment and Tooling
 
