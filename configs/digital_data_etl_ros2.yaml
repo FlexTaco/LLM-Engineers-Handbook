@@ -1,0 +1,11 @@
+settings:
+  orchestrator.sagemaker:
+    synchronous: false
+
+parameters:
+  user_full_name: ROS 2
+  links:
+    - https://github.com/moveit/moveit2_tutorials.git
+    - https://github.com/gazebosim/docs.git
+    - https://github.com/ros2/ros2_documentation
+    - https://github.com/ros-navigation/docs.nav2.org.git

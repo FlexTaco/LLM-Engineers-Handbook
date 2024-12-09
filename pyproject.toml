@@ -17,6 +17,9 @@ numpy = "^1.26.4"
 poethepoet = "0.29.0"
 datasets = "^3.0.1"
 
+# App
+gradio = "5.1.0"
+
 # Digital data ETL
 selenium = "^4.21.0"
 webdriver-manager = "^4.0.1"
@@ -67,12 +70,9 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poe.tasks]
 # Data pipelines
-run-digital-data-etl-alex = "echo 'It is not supported anymore.'"
-run-digital-data-etl-maxime = "poetry run python -m tools.run --run-etl --no-cache --etl-config-filename digital_data_etl_maxime_labonne.yaml"
-run-digital-data-etl-paul = "poetry run python -m tools.run --run-etl --no-cache --etl-config-filename digital_data_etl_paul_iusztin.yaml"
+run-digital-data-etl-ros2 = "poetry run python -m tools.run --run-etl --no-cache --etl-config-filename digital_data_etl_ros2.yaml"
 run-digital-data-etl = [
-    "run-digital-data-etl-maxime",
-    "run-digital-data-etl-paul",
+    "run-digital-data-etl-ros2"
 ]
 run-feature-engineering-pipeline = "poetry run python -m tools.run --no-cache --run-feature-engineering"
 run-generate-instruct-datasets-pipeline = "poetry run python -m tools.run --no-cache --run-generate-instruct-datasets"
